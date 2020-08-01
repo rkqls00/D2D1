@@ -214,6 +214,7 @@ void CSceneObjectScene01::FrameMove(DWORD elapsed)
 			m_ptPoint = m_pInput->GetMousePos();
 		}
 		m_bIsCrash = PtInRect(&m_rtBox, m_ptPoint);
+
 		if (op > 0) {
 			//Destroy();
 			nowStatus = OPTION;

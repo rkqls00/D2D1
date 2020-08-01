@@ -33,7 +33,7 @@ void CSceneObjectSceneOption::Init()
 	AddObject(bg);
 	Options = new CGameObjectButton(L"./image/Options.png", D2D1::Point2F(400, 45), 782, 806);
 	AddObject(Options);
-
+	
 	ReStart = 0;
 	resume = 0;
 	exit = 0;
@@ -48,6 +48,52 @@ void CSceneObjectSceneOption::Render()
 
 void CSceneObjectSceneOption::FrameMove(DWORD elapsed)
 {
+	if (m_HP < 11&&m_HP>9) {
+		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-1.png", D2D1::Point2F(1150, 800), 395, 57);
+		AddObject(Hp);
+	}
+	if (m_HP < 10&&m_HP>8) {
+		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-2.png", D2D1::Point2F(1150, 800), 395, 57);
+		AddObject(Hp);
+
+	}
+			if (m_HP < 9 && m_HP>7) {
+				Hp = new CGameObjectButton(L"./image/UI_energybar_damage-3.png", D2D1::Point2F(1150, 800), 395, 57);
+				AddObject(Hp);
+			}
+			if (m_HP < 8 && m_HP>6) {
+				Hp = new CGameObjectButton(L"./image/UI_energybar_damage-4.png", D2D1::Point2F(1150, 800), 395, 57);
+				AddObject(Hp);
+			}
+			if (m_HP < 7 && m_HP>5) {
+				Hp = new CGameObjectButton(L"./image/UI_energybar_damage-5.png", D2D1::Point2F(1150, 800), 395, 57);
+				AddObject(Hp);
+			}
+			if (m_HP < 6 && m_HP>4) {
+				Hp = new CGameObjectButton(L"./image/UI_energybar_damage-6.png", D2D1::Point2F(1150, 800), 395, 57);
+				AddObject(Hp);
+			}
+				if (m_HP < 5 && m_HP>3) {
+					
+					Hp = new CGameObjectButton(L"./image/UI_energybar_damage-7.png", D2D1::Point2F(1150, 800), 395, 57);
+					AddObject(Hp);
+				}
+				if (m_HP < 4 && m_HP>2) {
+					
+					Hp = new CGameObjectButton(L"./image/UI_energybar_damage-8.png", D2D1::Point2F(1150, 800), 395, 57);
+					AddObject(Hp);
+				}
+				if (m_HP < 3 && m_HP>1) {
+					
+					Hp = new CGameObjectButton(L"./image/UI_energybar_damage-9.png", D2D1::Point2F(1150, 800), 395, 57);
+					AddObject(Hp);
+				}
+				if (m_HP < 2) {
+					((CGameObjectButton*)(Hp))->m_isLive = false;
+					Hp = new CGameObjectButton(L"./image/UI_bar_zero.png", D2D1::Point2F(1150, 800), 395, 57);
+					AddObject(Hp);
+				}
+
 	if (m_blsCrash2) {
 		Resume2 = new CGameObjectButton(L"./image/Resume2.png", D2D1::Point2F(595, 250), 406, 85);
 		AddObject(Resume2);
@@ -72,60 +118,7 @@ void CSceneObjectSceneOption::FrameMove(DWORD elapsed)
 		Exit = new CGameObjectButton(L"./image/Exit11.png", D2D1::Point2F(595, 590), 406, 85);
 		AddObject(Exit);
 	}
-	/*if (((CGameObjectHero*)(hero))->m_PLife < 12 && ((CGameObjectHero*)(hero))->m_PLife>10) {
-		Hp = new CGameObjectButton(L"./image/UI_bar_full.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 11 && ((CGameObjectHero*)(hero))->m_PLife>9) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-1.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 10 && ((CGameObjectHero*)(hero))->m_PLife>8) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-2.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 9 && ((CGameObjectHero*)(hero))->m_PLife>7) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-3.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 8 && ((CGameObjectHero*)(hero))->m_PLife>6) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-4.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 7 && ((CGameObjectHero*)(hero))->m_PLife>5) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-5.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 6 && ((CGameObjectHero*)(hero))->m_PLife>4) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-6.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 5 && ((CGameObjectHero*)(hero))->m_PLife>3) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-7.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 4 && ((CGameObjectHero*)(hero))->m_PLife>2) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-8.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 3 && ((CGameObjectHero*)(hero))->m_PLife>1) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_energybar_damage-9.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}
-	if (((CGameObjectHero*)(hero))->m_PLife < 2 && ((CGameObjectHero*)(hero))->m_PLife>0) {
-		((CGameObjectButton*)(Hp))->m_isLive = false;
-		Hp = new CGameObjectButton(L"./image/UI_bar_zero.png", D2D1::Point2F(1150, 800), 395, 57);
-		AddObject(Hp);
-	}*/
+	
 	if (resume > 0) {
 		Re=1;
 		SceneStop = 0;

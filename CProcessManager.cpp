@@ -116,7 +116,7 @@ void CProcessManager::FrameMoveAllObject(DWORD elapsed) {
 								if (AABB(b, p)) {
 									isColl = TRUE;
 									(*iter2)->m_PLife--;
-
+									m_HP--;
 									break;
 								}
 							}

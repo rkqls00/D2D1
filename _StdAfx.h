@@ -61,6 +61,7 @@ extern int TTurn; //보스패턴을 위해 선언된 변수( 보스 패턴 2개를 번갈아 사용하기
 extern int Re; //옵션->스테이지 1으로 다시 하던 곳에서 계속 하기 위해 선언된 변수
 extern int Replayed; //옵션->스테이지 1으로 처음부터 다시 플레이 하기 위해 선언된 변수
 extern int that; // 리플레이 해야하는 스테이지가 몇인지 알기위한 변수
+extern int m_HP;
 #include "CGraphics.h"
 #include "input.h"
 #include "CDX2DApp.h"

@@ -16,10 +16,11 @@ void DEBUG_LOG(LPCSTR fmt, ...) {
 	OutputDebugStringA(buf);
 }  
 
-int nowStatus = START;
+int nowStatus = STAGE;
 D2D1_POINT_2F m_pPos;
 D2D1_POINT_2F m_BBPos;
 int TTurn = 1;
 int Re = 0;
 int Replayed = 0;
 int that = 0;
+int m_HP = 11;
