@@ -16,7 +16,7 @@ void DEBUG_LOG(LPCSTR fmt, ...) {
 	OutputDebugStringA(buf);
 }  
 
-int nowStatus = STAGE;
+int nowStatus = START;
 D2D1_POINT_2F m_pPos;
 D2D1_POINT_2F m_BBPos;
 int TTurn = 1;

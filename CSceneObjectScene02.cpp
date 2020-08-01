@@ -12,7 +12,7 @@ CSceneObjectScene02::~CSceneObjectScene02()
 
 void CSceneObjectScene02::Init()
 {
-	
+	PlaySound(TEXT("2.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP | SND_NODEFAULT);
 	mobSpawn = timeGetTime();
 	that = 1;
 	bg = new CGameObjectScroolMap(L"./image/Map.jpg", { 0, 0 }, 1600, 900);

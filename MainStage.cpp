@@ -48,6 +48,7 @@ void MainStage::Init()
 		fix = new CGameObjectButton(L"./image/Fix.jpg", { 1470, 0 }, 62, 62);
 		AddObject(fix);
 	}
+	PlaySound(TEXT("1.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP | SND_NODEFAULT);
 }
 
 void MainStage::Render()

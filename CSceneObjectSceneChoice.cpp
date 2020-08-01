@@ -71,12 +71,14 @@ void CSceneObjectSceneChoice::FrameMove(DWORD elapsed)
 	}
 	if (ChoiceScene > 0) {
 		if (timeGetTime() - mobSpawn > 1500) {
+			PlaySound(NULL, 0, 0);
 			Destroy();
 			nowStatus = STAGE;
 		}
 	}
 	if (ChoiceScene2 > 0) {
 		if (timeGetTime() - mobSpawn > 1500) {
+			PlaySound(NULL, 0, 0);
 			Destroy();
 			nowStatus = STAGE2;
 		}

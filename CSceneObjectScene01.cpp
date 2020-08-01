@@ -12,6 +12,7 @@ CSceneObjectScene01::~CSceneObjectScene01()
 
 void CSceneObjectScene01::Init()
 {
+	PlaySound(TEXT("2.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP | SND_NODEFAULT);
 	op = 0;
 	that = 0;
 	mobSpawn = timeGetTime();
