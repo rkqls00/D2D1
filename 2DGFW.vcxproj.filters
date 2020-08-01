@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Scene">
+      <UniqueIdentifier>{4c1bbda6-26c9-4e5d-bcf5-9f75d3d50075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object">
+      <UniqueIdentifier>{6074ab1c-aa30-495b-bb0e-529c0822678e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Enemy">
+      <UniqueIdentifier>{fcd7f024-a646-4e7e-8c94-dc02c6d7ab37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\player">
+      <UniqueIdentifier>{85bb248a-2fe7-4935-b801-e38ead17050a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Boss">
+      <UniqueIdentifier>{af637295-1284-47b6-9027-5478c24f98b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Map">
+      <UniqueIdentifier>{1839e272-8d33-4e7c-b84b-e6db502a11cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Boss\Bullet">
+      <UniqueIdentifier>{5ec54bda-d887-46ae-82c7-f8784feb3a28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDX2DApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CGraphics.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CSprite.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CProcessManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CSpriteManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_Stdafx.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainStage.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObject.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectBoss.cpp">
+      <Filter>소스 파일\Object\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectBullet.cpp">
+      <Filter>소스 파일\Object\player</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectEnemyBullet.cpp">
+      <Filter>소스 파일\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectHero.cpp">
+      <Filter>소스 파일\Object\player</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectButton.cpp">
+      <Filter>소스 파일\Object\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectScroolMap.cpp">
+      <Filter>소스 파일\Object\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObjectSceneGoodEnding.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObjectScene02.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObjectSceneGameOver.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObjectSceneChoice.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectEnemy.cpp">
+      <Filter>소스 파일\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectBossBullet.cpp">
+      <Filter>소스 파일\Object\Boss\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectBossBullet2.cpp">
+      <Filter>소스 파일\Object\Boss\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectBossBullet3.cpp">
+      <Filter>소스 파일\Object\Boss\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObjectBossBullet4.cpp">
+      <Filter>소스 파일\Object\Boss\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObjectSceneOption.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObjectSceneRule.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObjectSceneCredit.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneObjectScene01.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CDX2DApp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_StdAfx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CGraphics.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CSprite.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameObject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CProcessManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpriteManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectBossBullet.h">
+      <Filter>소스 파일\Object\Boss\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectBossBullet2.h">
+      <Filter>소스 파일\Object\Boss\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectBossBullet3.h">
+      <Filter>소스 파일\Object\Boss\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectBossBullet4.h">
+      <Filter>소스 파일\Object\Boss\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectBoss.h">
+      <Filter>소스 파일\Object\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectEnemy.h">
+      <Filter>소스 파일\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectEnemyBullet.h">
+      <Filter>소스 파일\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectButton.h">
+      <Filter>소스 파일\Object\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectScroolMap.h">
+      <Filter>소스 파일\Object\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectHero.h">
+      <Filter>소스 파일\Object\player</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObjectBullet.h">
+      <Filter>소스 파일\Object\player</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObjectScene01.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObjectScene02.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObjectSceneChoice.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObjectSceneCredit.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObjectSceneGameOver.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObjectSceneGoodEnding.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObjectSceneOption.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneObjectSceneRule.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MainStage.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="2DGFW.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
