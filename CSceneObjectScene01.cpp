@@ -32,6 +32,7 @@ void CSceneObjectScene01::Init()
 
 		Hp = new CGameObjectButton(L"./image/UI_bar_full.png", D2D1::Point2F(1150, 800), 395, 57);
 		AddObject(Hp);
+		((CGameObjectHero*)(hero))->m_PLife = m_HP;
 	}
 	if (Replayed > 0) {
 		((CGameObjectHero*)(hero))->m_PLife = 11;
